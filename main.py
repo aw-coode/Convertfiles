@@ -21,14 +21,15 @@ import progconv
 
 
 # env
-bot_token = os.environ.get("TOKEN", "5800074980:AAFZf_cdSimHv_qnbYY4eeE4qm2gSse1jww") 
-api_hash = os.environ.get("HASH", "dc1476b2e297c057ee2d7b6df265a199") 
-api_id = os.environ.get("ID", "8373939")
+TOKEN = os.environ.get("TOKEN") or CONFIGDATA.get("TOKEN", "")
+HASH = os.environ.get("HASH") or CONFIGDATA.get("HASH", "")
+ID = os.environ.get("ID") or CONFIGDATA.get("ID", "")
+app = Client("my_bot", api_id=ID, api_hash=HASH, bot_token=TOKEN)
+
 
 
 # bot
-app = Client("my_bot",api_id=api_id, api_hash=api_hash,bot_token=bot_token)
-os.system("chmod 777 c41lab.py negfix8 tgsconverter")
+
 
 
 # main function to follow
