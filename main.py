@@ -21,9 +21,9 @@ import progconv
 
 
 # env
-bot_token = os.environ.get("TOKEN", "") 
-api_hash = os.environ.get("HASH", "") 
-api_id = os.environ.get("ID", "")
+bot_token = os.environ.get("TOKEN", "5800074980:AAFZf_cdSimHv_qnbYY4eeE4qm2gSse1jww") 
+api_hash = os.environ.get("HASH", "dc1476b2e297c057ee2d7b6df265a199") 
+api_id = os.environ.get("ID", "8373939")
 
 
 # bot
