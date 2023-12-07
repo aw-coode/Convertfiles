@@ -1,8 +1,10 @@
-FROM bipinkrish/file-converter:latest
+FROM python:3.8-slim-buster
 
-RUN apt install build-essential -y
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
 COPY . .
-RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python3","main.py"]
+CMD [ "python3", "main.py"]
